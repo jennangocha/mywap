@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         for(User usr: userList) {
             if (username.equals((usr.getUsername())) && password.equals(usr.getPassword())) {
                 req.getSession().setAttribute("user_info", username);
-                if(remember.equals("yes")) {
+                if("yes".equals(remember)) {
                     Cookie c = new Cookie("user", username);
                     c.setMaxAge(30 * 24 * 60 * 60);
                     resp.addCookie(c);

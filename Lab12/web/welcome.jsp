@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Welcome</h1>
+<form action="logout" method="POST">
+<h1>Welcome ${user_info}</h1>
+<div><input type="submit" value="Logout"></div>
+</form>
 </body>
 </html>

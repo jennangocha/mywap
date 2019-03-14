@@ -14,8 +14,7 @@
 <div>Remember me: <input type="checkbox"
 <c:if test="${cookie.containsKey('user')}">
         checked
-</c:if>
-                         name="remember" value="yes"/></div>
+</c:if> name="remember" value="yes"/></div>
     <div><input type="submit" value="Login" /></div>
 </form>
 <span style="...">${error_msg}</span>
